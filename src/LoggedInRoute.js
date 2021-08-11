@@ -10,13 +10,13 @@ const LoggedInRoute = ({component: Component, ...rest}) =>{
 return(
     <Route
     {...rest}//pathやexactを分解したものを渡す。
-    render={props =>{
+    render={props =>(
         user ? (
             <Component {...props} />
         ) : (
             <Redirect to={'/login'} />
         )
-    }}
+    )}
     />
 )
 }

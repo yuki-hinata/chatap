@@ -30,6 +30,7 @@ const SignUp  = () =>{
                         id='name'
                         name='name'
                         placeholder='name'
+                        onChange={(e) => setName(e.target.value)}
                         />
                 </div>
 
@@ -40,9 +41,10 @@ const SignUp  = () =>{
                         id='email'
                         name='email'
                         placeholder='Email'
+                        onChange={(e) => setEmail(e.target.value)}
                         />
                 </div>
-                
+
                 <div>
                     <label htmlFor='password'>Password</label>
                     <input
@@ -50,6 +52,7 @@ const SignUp  = () =>{
                         id='password'
                         name='password'
                         placeholder='password'
+                        onChange={(e) => setPassword(e.target.value)}
                         />
                 </div>
                 <button type='submit'>Sign Up</button>

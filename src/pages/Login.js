@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react'
 import firebase from '../config/firebase'
 import { AuthContext } from '../AuthService'
-import { Route,Redirect } from 'react-router'
+import { Route,Redirect } from 'react-router-dom'
 
 const Login = ({history}) => {
     const [email, setEmail] = useState('')
@@ -27,7 +27,7 @@ const Login = ({history}) => {
     return(
     <React.Fragment>
         <h1>Login</h1>
-        <form>
+        <form onSubmit={handleSubmit} >
             <div>
                 <label htmlFor='email'>E-Mail</label>
                 <input 
