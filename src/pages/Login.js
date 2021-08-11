@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react'
 import firebase from '../config/firebase'
 import { AuthContext } from '../AuthService'
-import { Route,Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
 
 const Login = ({history}) => {
     const [email, setEmail] = useState('')

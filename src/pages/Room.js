@@ -2,8 +2,6 @@ import React,{useState, useEffect, useContext} from 'react'
 import Item from '../pages/Item'
 import {AuthContext} from '../AuthService'
 import firebase from '../config/firebase'
-import {nanoid} from 'nanoid'
-
 
 const Room = () => {
     const [messages, setMessages] = useState([])

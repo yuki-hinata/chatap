@@ -16,7 +16,7 @@ import {
 const App = () =>{
     return(
         <AuthProvider>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <LoggedInRoute exact path='/' component={Room} />
                     <Route exact path='/login' component={Login}　/>
